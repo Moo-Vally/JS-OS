@@ -1,0 +1,375 @@
+body {
+    background-color: #4e9ed4;
+    overflow: hidden;
+}
+
+button {
+    border-radius: 0;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#screenspace {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* menu */
+#menu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.menubtn {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    font-size: 20pt;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+}
+.menubtn:hover {
+    background-color: white;
+    color: black
+}
+.menuitem {
+    padding-top: 10px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.menuitem:hover {
+    background-color: black;
+    color: white;
+}
+.dropdown {
+    display: none;
+    background-color: white;
+    position: fixed;
+    top: 40px;
+    width: 100px;
+    height: 300px;
+    text-align: center;
+}
+.menubtn:hover ~.dropdown {
+    display: initial;
+}
+.dropdown:hover {
+    display: initial;
+}
+.clock {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.clock:hover {
+    color: black;
+    background-color: white;
+}
+
+/* window */
+.closeBtn {
+    position: relative;
+    background-color: #f17377;
+    border: none;
+    color: #333;
+    width: 25px;
+    height: 25px;
+}
+
+.window {
+    position: absolute;
+    background-color: white
+}
+
+/* files app */
+.fileslistitem {
+    width: 385px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.fileslistitem:hover {
+    background-color: #eaeaea;
+}
+.filesapplist {
+    list-style-type: none;
+    position: absolute;
+    top: 9px;
+    left: -4px;
+    padding-left: 4px;
+}
+
+#allFilesBtn {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 2px;
+    transition: 0.2s;
+    border-radius: 3px;
+    border-style: solid;
+    height: 20px;
+    left: 27px;
+    border-color: black;
+}
+#noteFilesBtn {
+    background-color: black;
+    color: white;
+    position: absolute;
+    transition: 0.2s;
+    top: 2px;
+    border-radius: 3px;
+    height: 20px;
+    border-style: solid;
+    left: 59px;
+    border-color: black;
+}
+#listFilesBtn {
+    background-color: black;
+    color: white;
+    position: absolute;
+    transition: 0.2s;
+    border-radius: 3px;
+    top: 2px;
+    height: 20px;
+    border-style: solid;
+    left: 111px;
+    border-color: black;
+}
+#allFilesBtn:hover {
+    background-color: white;
+    color: black;
+}
+#noteFilesBtn:hover {
+    background-color: white;
+    color: black;
+}
+#listFilesBtn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* lists app */
+.newlistinput {
+    border: none;
+    background-color: #eaeaea;
+    position: absolute;
+    top: 2px;
+    right: 42px;
+    height: 20px;
+    width:150px;
+    resize: none;
+}
+.newlistinput:focus {
+    outline: none;
+}
+#listoflists {
+    list-style-type: none;
+    position: absolute;
+    top: 9;
+    left: -4;
+    padding-left: 4px;
+}
+.listItem {
+    width: 385;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.listItem:hover {
+    background-color: #eaeaea;
+}
+
+.listOfListItems {
+    list-style-type: none;
+    position: absolute;
+    top: 9;
+    left: -4;
+    padding-left: 4px;
+}
+.listOfListItem {
+    width: 385;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.listOfListItem:hover {
+    background-color: #eaeaea;
+}
+
+.listitembutton {
+    position: relative;
+    border: none;
+    color: black;
+    top: -10px;
+    float: right;
+    width: 40px;
+    background-color: white;
+    height: 40px;
+}
+
+.listitembutton:hover {
+    background-color: #f17377;
+}
+
+/* notepad app */
+#notepadBody {
+    border: none;
+    background-color: #eaeaea;
+    position: absolute;
+    top: 24px;
+    left: 0px;
+    height: 477px;
+    width: 400px;
+    resize: none;
+}
+#notepadBody:focus {
+    outline: none;
+}
+
+.createlistbtn {
+    position: absolute;
+    top: 2px;
+    height: 20px;
+    right: 2px;
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+}
+.createlistbtn:hover {
+    background-color: white;
+    color: black;
+}
+
+#notepadtitle {
+    border: none;
+    background-color: #eaeaea;
+    position: absolute;
+    top: 2px;
+    right: 42px;
+    height: 20px;
+    width: 150px;
+    resize: none;
+}
+#notepadtitle:focus {
+    outline: none;
+}
+
+.savenotebtn {
+    position: absolute;
+    top: 2px;
+    height: 20px;
+    right: 2px;
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+}
+.savenotebtn:hover {
+    color: black;
+    background-color: white;
+}
+.opennotebtn {
+    top: 2px;
+    height: 20px;
+    left: 28px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+}
+.opennotebtn:hover {
+    color: black;
+    background-color: white;
+}
+
+.noteFilesList {
+    list-style-type: none;
+    position: absolute;
+    top: 9px;
+    left: -4px;
+    padding-left: 4px;
+}
+.noteFilesItem {
+    width: 385px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.noteFilesItem:hover {
+    background-color: #eaeaea;
+}
+
+/* calculator app */
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.calculator-display {
+    width: 90%;
+    font-size: 2rem;
+    height: 40px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn {
+    height: 40px;
+    background-color: #c9c6c6;
+    background-color: transparent;
+    font-size: 1rem;
+    border: none;
+    color: #333;
+}
+.btn:hover {
+    background-color: #eaeaea;
+}
+
+.key-equal {
+    height: 100%;
+    grid-area: 2 / 4 / 6 / 5;
+}
+.key-equal:hover {
+    background-color: #4e9ed4;
+}
+.key-clear:hover {
+    background-color: #f17377;
+}
